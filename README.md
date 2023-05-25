@@ -32,7 +32,7 @@ Our major concerns on training data are:
 
 Hence, we provide ***HDRTV4K*** label HDR of better diversity and quality, you can downlaod from below:
 
-[part1](https://userscloud.com/wbuaxcxaq19l), [part2](https://userscloud.com/eadf6gazjkm6), [part3](https://userscloud.com/a9j83lvpw10n), [part4](https://userscloud.com/8qtx3d4opav7), [part5](https://userscloud.com/1f08hwr4qj4g), [part6](https://userscloud.com/w1uhctigqwq9), [part7](https://userscloud.com/j0lb7vtinfks), [part8](https://userscloud.com/42nbjfv6fhfx) TO BE UPDATED (total 90.94GB, please extract these zip files together).
+[part1](https://userscloud.com/wbuaxcxaq19l), [part2](https://userscloud.com/eadf6gazjkm6), [part3](https://userscloud.com/a9j83lvpw10n), [part4](https://userscloud.com/8qtx3d4opav7), [part5](https://userscloud.com/1f08hwr4qj4g), [part6](https://userscloud.com/w1uhctigqwq9), [part7](https://userscloud.com/j0lb7vtinfks), [part8](https://userscloud.com/42nbjfv6fhfx) TO BE UPDATED (total 12 parts, DONOT download now) (total 90.94GB, please extract these zip files together).
 
 Atfer obtaining label HDR, you can:
 
