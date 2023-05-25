@@ -45,7 +45,7 @@ Atfer obtaining label HDR, you can:
 | ***HC+GM*** (ours)    | good                      | moderate                | [here(AliyunDrive)](https://www.aliyundrive.com/s/UXmUonpgukX) or<br>[here(GoogleDrive)](https://drive.google.com/file/d/1-qv7YPpM3sc_6Nex4UefWv6gEPBe2P2I/view?usp=sharing) (2.13GB)       |
 | ***2446a*** (old)    | bad                      | bad                |          |
 | ***Reinhard*** (old)    | bad                      | moderate                |          |
-| ***YouTube*** (old, most widely adopted)    | good                      | bad                | [here(GoogleDrive)](https://drive.google.com/file/d/1_MuSt3mdpNlqcKp8so_qJMvbVCfGjlyG/view?usp=sharing)         |
+| ***YouTube*** (old, most widely adopted)    | good                      | bad                | [here(GoogleDrive)](https://drive.google.com/file/d/1_MuSt3mdpNlqcKp8so_qJMvbVCfGjlyG/view?usp=sharing) (2.51GB)<br>(if used, you can sure learn as same style as previous methods)        |
 | ***DaVinci*** (w. different settings) | bad | good | this DM is not discussed in our paper, TODO |
 
 and use any of them to train your network (since AliyunDrive donnot support sharing .zip, file there will be a .exe self-extract package and you can run it at Window system).
