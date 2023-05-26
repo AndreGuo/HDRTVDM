@@ -38,7 +38,7 @@ Atfer obtaining label HDR, you can:
 
 **1. Download the coresponding degraded SDR below:**
 
-| From degradation model (DM) | Extent of degradation | Style/aesthetic | Download |
+| From degradation model (DM) | (3) Extent of degradation | (4) Style or aesthetic | Download |
 |:----:|:---------------------:|:---------------:|:--------:|
 | ***OCIO2*** (ours)     | moderate                      | good                | [here(AliyunDrive)](https://www.aliyundrive.com/s/taNs6JGhAVj) or<br>[here(GoogleDrive)](https://drive.google.com/file/d/1eUCqMvUv-dBxHCQ1pW72sw4RvQDbI1o3/view?usp=sharing) (2.27GB)       |
 | ***2446c+GM*** (ours)    | moderate                      | good                | [here(AliyunDrive)](https://www.aliyundrive.com/s/taNs6JGhAVj) or<br>[here(GoogleDrive)](https://drive.google.com/file/d/1UouhVb05NfMh8Z7gx3z1v_RcaoSmQEqA/view?usp=sharing) (2.03GB)       |
@@ -58,7 +58,7 @@ In this case, you can:
 
 + Change the style and aesthetic of degraded SDR to better suit your own technical and artistic intention, or involve your expertise in color science *etc.* for more precise control between SDR and HDR. 
 + Control the extent of degradation to follow the staticstics of target SDR in your own application scenario (*e.g.* remastering legacy SDR or converting on-the-air SDR). You can even add diversity on the extent of degradation to endow your network a generalizability to various extent of degradation.
-+ Add new types of degradation *e.g.* camera noise, compression artifact, motion blur and film grain *etc.* for more specific application scenario. Their degradation modles are relatively studied more and you can easily find more references.
++ Add new types of degradation *e.g.* camera noise, compression artifact, motion blur, chromatic aberration and film grain *etc.* for more specific application scenario. Their degradation models are relatively studied more and you can easily find more references.
 
 ### 1.2 Test set
 
