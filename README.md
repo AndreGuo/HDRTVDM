@@ -32,7 +32,7 @@ Our major concerns on training data are:
 
 Hence, we provide ***HDRTV4K*** label HDR of better diversity and quality, you can downlaod from below:
 
-[part1](https://userscloud.com/wbuaxcxaq19l), [part2](https://userscloud.com/eadf6gazjkm6), [part3](https://userscloud.com/a9j83lvpw10n), [part4](https://userscloud.com/8qtx3d4opav7), [part5](https://userscloud.com/1f08hwr4qj4g), [part6](https://userscloud.com/w1uhctigqwq9), [part7](https://userscloud.com/j0lb7vtinfks), [part8](https://userscloud.com/42nbjfv6fhfx) TO BE UPDATED (total 12 parts, DONOT download now) (total 90.94GB, please extract these zip files together).
+[part1](https://userscloud.com/wbuaxcxaq19l), [part2](https://userscloud.com/eadf6gazjkm6), [part3](https://userscloud.com/a9j83lvpw10n), [part4](https://userscloud.com/8qtx3d4opav7), [part5](https://userscloud.com/1f08hwr4qj4g), [part6](https://userscloud.com/w1uhctigqwq9), [part7](https://userscloud.com/j0lb7vtinfks), [part8](https://userscloud.com/42nbjfv6fhfx), [part9](https://userscloud.com/anij44zvn4yx), [part10](https://userscloud.com/cxmtftz6rrl8), [part11](https://userscloud.com/yvi9t9jwc014), [part12](https://userscloud.com/nmhazmgkqbge) (total 90.94GB, please extract these zip files together).
 
 Atfer obtaining label HDR, you can:
 
@@ -42,11 +42,11 @@ Atfer obtaining label HDR, you can:
 |:----:|:---------------------:|:---------------:|:--------:|
 | ***OCIO2*** (ours)     | moderate                      | good                | [here(AliyunDrive)](https://www.aliyundrive.com/s/taNs6JGhAVj) or<br>[here(GoogleDrive)](https://drive.google.com/file/d/1eUCqMvUv-dBxHCQ1pW72sw4RvQDbI1o3/view?usp=sharing) (2.27GB)       |
 | ***2446c+GM*** (ours)    | moderate                      | good                | [here(AliyunDrive)](https://www.aliyundrive.com/s/taNs6JGhAVj) or<br>[here(GoogleDrive)](https://drive.google.com/file/d/1UouhVb05NfMh8Z7gx3z1v_RcaoSmQEqA/view?usp=sharing) (2.03GB)       |
-| ***HC+GM*** (ours)    | good                      | moderate                | [here(AliyunDrive)](https://www.aliyundrive.com/s/UXmUonpgukX) or<br>[here(GoogleDrive)](https://drive.google.com/file/d/1-qv7YPpM3sc_6Nex4UefWv6gEPBe2P2I/view?usp=sharing) (2.13GB)       |
-| ***2446a*** (old)    | bad                      | bad                |          |
-| ***Reinhard*** (old)    | bad                      | moderate                |          |
-| ***YouTube*** (old, most widely adopted)    | good                      | bad                | [here(GoogleDrive)](https://drive.google.com/file/d/1_MuSt3mdpNlqcKp8so_qJMvbVCfGjlyG/view?usp=sharing) (2.51GB)<br>(if used, you can learn a silimar style as previous methods)        |
-| ***DaVinci*** (w. different settings) | bad | good | this DM is not discussed in our paper, TODO |
+| ***HC+GM*** (ours)    | more                      | moderate                | [here(AliyunDrive)](https://www.aliyundrive.com/s/UXmUonpgukX) or<br>[here(GoogleDrive)](https://drive.google.com/file/d/1-qv7YPpM3sc_6Nex4UefWv6gEPBe2P2I/view?usp=sharing) (2.13GB)       |
+| ***2446a*** (old)    | less                      | bad                |          |
+| ***Reinhard*** (old)    | less                      | moderate                |          |
+| ***YouTube*** (old, most widely adopted)    | more                      | bad                | [here(GoogleDrive)](https://drive.google.com/file/d/1_MuSt3mdpNlqcKp8so_qJMvbVCfGjlyG/view?usp=sharing) (2.51GB)<br>(if used, you can learn a silimar style as previous methods)        |
+| ***DaVinci*** (w. different settings) | less | good | this DM is not discussed in our paper, TODO |
 
 and use any of them to train your network (since AliyunDrive donnot support sharing .zip, file there will be a .exe self-extract package and you can run it at Window system).
 
