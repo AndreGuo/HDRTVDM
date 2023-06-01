@@ -17,6 +17,13 @@ in CVPR2023.
 
 ---
 
+## 0. Our scope
+
+There're many HDR-related methods in this year's CVPR. Our method differs from others in that we take conventional SDR image to HDR in PQ/BT.2020 container (which is called *HDRTV* by [HDRTVNet(ICCV21)](http://openaccess.thecvf.com/content/ICCV2021/papers/Chen_A_New_Journey_From_SDRTV_to_HDRTV_ICCV_2021_paper.pdf)), and is meant to be applied in media industry.
+
+Others methods may take single SDR to a linear-light-HDR in grapghics/rendering application, or merge several SDRs to single HDR which should be applied in camera imaging pipeline.
+Please jump to them if you are interested in other HDR-related application scenario.
+
 ## 1. HDRTV4K Dataset
 
 ### 1.1 Training set
