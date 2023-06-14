@@ -83,7 +83,18 @@ TO BE UPDATED
 
 ## 3. Assessment criteria of HDR/WCG container and ITM process
 
-TO BE UPDATED
+In our paper we use 4 HDR/WCG exclusive metrics to measure how many HDR/WCG volume a single frame possess.
+
+| Dimension                                                    |                                   Spatial fraction                                   |                         Numerical energy                         |
+|:------------------------------------------------------------:|:------------------------------------------------------------------------------------:|:----------------------------------------------------------------:|
+| HDR (high dynamic range) volume                              |   [FHLP](/metrics/HDRdegreeAssessment.m)(Fraction of HighLight Pixels)               |    [EHL](/metrics/HDRdegreeAssessment.m)(Extent of HighLight)    |
+| WCG (wide color gamut) volume                                |   [FWGP](/metrics/WCGdegreeAssessment.m)(Fraction of Wide Gamut Pixels)              |    [EWG](/metrics/WCGdegreeAssessment.m)(Extent of Wide Gamut)   |
+
+You can find their usage in the comment.
+
+**Note that**: 
+From the prespective of quality assessment (QA), these metrics have not been proven to be consistently positively-correlated with good viewing experience, therefore the should only serve as a reference of HDR/WCG volume.
+HDR/WCG's preception involoves sophisticated knowlegde in color science and human vision *etc.*, and intuitively these 4 metrics chould be mesured in a "naturalness" way (counting FHLP/EHL/FWGP/EWG's distribution on large-scale visually-pleasuring HDR/WCG images, and juding if someone's FHLP/EHL/FWGP/EWG falls in commom distribution.)
 
 ## Contact
 
