@@ -47,7 +47,7 @@ or
 
 Atfer obtaining label HDR, you can:
 
-**1. Download the coresponding degraded SDR below:**
+**1.1.1. Download the coresponding degraded SDR below:**
 
 | From degradation model (DM) | (3) Extent of degradation | (4) Style or aesthetic | Download |
 |:----:|:---------------------:|:---------------:|:--------:|
@@ -63,7 +63,7 @@ and use any of them to train your network (since AliyunDrive donnot support shar
 
 Since our degradation models (DMs) are just a preliminary attempt on concerns (3) and (4), we encourage you to:
 
-**2. (Encouraged) Use your own degradation model to obtain input SDR**
+**1.1.2. (Encouraged) Use your own degradation model to obtain input SDR**
 
 In this case, you can:
 
@@ -78,6 +78,46 @@ In this case, you can:
 + From the prespective of quality assessment (QA), the assessment of ITM/up-conversion (enhancement process) is still an open task. We and our colleague is currently working on a better benchmark, and will update here if it's released.
 
 ## 2. Method
+
+### 2.1 Prerequisites
+
+- Python
+- PyTorch
+- OpenCV
+- ImageIO
+- NumPy
+
+### 2.2 Usage (how to test)
+
+Run `method/test.py` with below configuration(s):
+
+```bash
+python3 method/test.py frameName.jpg
+```
+
+When batch processing, use wildcard `*`:
+
+```bash
+python3 method/test.py framesPath/*.png
+```
+
+or like:
+
+```bash
+python3 method/test.py framesPath/footageName_*.png
+```
+
+Add below configuration(s) for specific propose:
+
+| Purpose                                                                                          |                                    Configuration                                     |
+|:-------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------:|
+| Specifing output path                                                                            |                       `-out resultDir/` (default is inputDir)                        |
+| Resizing image before inference                                                                  |                       `-resize True -height newH -width newW`                        |
+| Adding filename tag                                                                              |                                    `-tag yourTag`                                    |
+| Forcing CPU processing                                                                           |                                   `-use_gpu False`                                   |
+| Using input SDR with bit depth != 8                                                              |                               *e.g.* `-in_bitdepth 16`                               
+| Saving result HDR in other format<br/>(defalut is uncompressed<br/>16-bit `.tif`of single frame) | `-out_format suffix`<br>`png` as 16bit .png<br>`exr` require extra package `openEXR` |
+
 
 TO BE UPDATED
 
