@@ -96,6 +96,8 @@ You can find their usage in the comment.
 From the prespective of quality assessment (QA), these metrics have not been proven to be consistently positively-correlated with good viewing experience, therefore the should only serve as a reference of HDR/WCG volume.
 HDR/WCG's preception involoves sophisticated knowlegde in color science and human vision *etc.*, and intuitively these 4 metrics chould be mesured in a "naturalness" way (counting FHLP/EHL/FWGP/EWG's distribution on large-scale visually-pleasuring HDR/WCG images, and juding if someone's FHLP/EHL/FWGP/EWG falls in commom distribution.)
 
+TO BE UPDATED
+
 ## Contact
 
 Guo Cheng ([Andre Guo](https://orcid.org/orcid=0000-0002-2660-2267)) guocheng@cuc.edu.cn
