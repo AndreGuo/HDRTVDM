@@ -118,6 +118,7 @@ Add below configuration(s) for specific propose:
 | Using input SDR with bit depth != 8                                                              |                               *e.g.* `-in_bitdepth 16`                               
 | Saving result HDR in other format<br/>(defalut is uncompressed<br/>16-bit `.tif`of single frame) | `-out_format suffix`<br>`png` as 16bit .png<br>`exr` require extra package `openEXR` |
 
+We also provide alternative checkpoints: `method/params_YouTube.pth` (trained with same lable HDR, but different ***YouTube*** degradation model) and `method/params_Zeng20.pth` (trained with same degradation model, but different label HDR from ***Zeng20*** dadatset), to show the imapct of training set on our task. 
 
 TO BE UPDATED
 
