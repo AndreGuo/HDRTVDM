@@ -6,7 +6,7 @@ import numpy as np
 import torch
 import cv2
 import imageio.v2 as io
-from network import LutNet
+from network import TriSegNet
 
 
 ### System utilities ###
@@ -100,7 +100,7 @@ opt = parser.parse_args()
 
 
 ### Load network ###
-net = LutNet()
+net = TriSegNet()
 net.load_state_dict(torch.load('params.pth', map_location=lambda s, l: s))
 
 ### Defined Pre-process ##
