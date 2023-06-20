@@ -61,11 +61,11 @@ def create_name(inp, tag, ext, out, extra_tag):
 ### Image utilities ###
 def np2torch(img, from_bgr=True):
     img = img[:, :, [2, 1, 0]] if from_bgr else img
-    return torch.from_numpy(np.ascontiguousarray(np.transpose(img, (2, 0, 1)))).float()
+    return torch.from_numpy(np.ascontiguousarray(np.transpose(img, (2, 0, 1)))).float().half()
 
 
 def torch2np(t_img, to_bgr=True):
-    img_np = t_img.detach().numpy()
+    img_np = t_img.numpy()  # t_img.detach().numpy()
     out = np.transpose(img_np[[2, 1, 0], :, :], (1, 2, 0)).astype(np.float32) if to_bgr \
         else np.transpose(img_np, (1, 2, 0)).astype(np.float32)
     return out
@@ -100,7 +100,7 @@ opt = parser.parse_args()
 
 
 ### Load network ###
-net = TriSegNet()
+net = TriSegNet().half()
 net.load_state_dict(torch.load('params.pth', map_location=lambda s, l: s))
 
 ### Defined Pre-process ##
@@ -118,9 +118,9 @@ for ldr_file in opt.ldr:
         net.cuda()
         ldr_input = ldr_input.cuda()
 
-    prediction = net(ldr_input)
-    prediction = prediction.detach()[0].float().cpu()
-    prediction = torch2np(prediction, to_bgr=False)
+    with torch.no_grad():
+    	prediction = net(ldr_input).detach()[0].float().cpu()
+    	prediction = torch2np(prediction, to_bgr=False)
 
     if opt.out_format == 'tif':
         out_name = create_name(ldr_file, 'HDR', 'tif', opt.out, opt.tag)
