@@ -79,6 +79,11 @@ In this case, you can:
 
 ## 2. Method
 
+### 2.0 Note that
+
+- The name of our neural network is *LSN (luminance segmented network)*
+- Curently *LSN* is only trained on our own data, if you want to compare it on current benchmark e.g. HDRTV1K, please wait us releasing the checkpoint trained on current training set e.g. HDRTV1K. 
+
 ### 2.1 Prerequisites
 
 - Python
