@@ -24,7 +24,7 @@ There're many HDR-related methods in this year's CVPR. Our method differs from o
 Others methods may take single SDR to a linear-light-HDR in grapghics/rendering application, or merge several SDRs to single HDR which should be applied in camera imaging pipeline.
 Please jump to them if you are interested in other HDR-related application scenario.
 
-## 1. HDRTV4K Dataset
+## 1. HDRTV4K Dataset (Training set & test set)
 
 ### 1.1 Training set
 
@@ -74,15 +74,15 @@ In this case, you can:
 ### 1.2 Test set
 
 + The test set used in our paper (consecutive frames) is protected by copyright and will not be relesed. In this case, we provided alternative test set which consists of 400 individual frames from 10% training set [here(AliyunDrive)](https://www.aliyundrive.com/s/QodPeQyJ3C2) or [here(GoogleDrive)](https://drive.google.com/file/d/15VbRZeKVztG4Q_ovVvzo0LzGmW0ThjJf/view?usp=sharing).
-+ In our paper, conventional distance-based metrics *PSNR*, *SSIM*, *deltaE* and *VDP* don't work since SDR-HDR numerical relation in training and test set is different (This is like model trained on *ExpertC* of *Adobe-MIT-5K* dataset will score lower on *ExpertA*). So if you want these metrics work, you should test on the same test set (*i.e.* if your model is trained with ***OCIO2*** SDR, you should also test it on ***OCIO2*** SDR).
-+ From the prespective of quality assessment (QA), the assessment of ITM/up-conversion (enhancement process) is still an open task. We and our colleague is currently working on a better benchmark, and will update here if it's released.
++ In our paper, conventional distance-based metrics *PSNR*, *SSIM*, *deltaE* and *VDP* don't work since SDR-HDR/WCG numerical relation in training and test set is different (This is like model trained on *ExpertC* of *Adobe-MIT-5K* dataset will score lower on *ExpertA*). So if you want these metrics work, you should test on the same test set (*i.e.* if your model is trained with ***OCIO2*** SDR, you should also test it on ***OCIO2*** SDR).
++ From the prespective of quality assessment (QA), the assessment of ITM/up-conversion (enhancement process) is still an open task. We and our colleague is currently working on it, please refer to [here](https://www.sciencedirect.com/science/article/abs/pii/S0141938223001439) or [here](https://www.researchgate.net/publication/373316933_Inverse-tone-mapped_HDR_video_quality_assessment_A_new_dataset_and_benchmark).
 
 ## 2. Method
 
 ### 2.0 Note that
 
-- The name of our neural network is *LSN (luminance segmented network)*
-- Curently *LSN* is only trained on our own data, if you want to compare it on current benchmark e.g. HDRTV1K, please wait us releasing the checkpoint trained on current training set e.g. HDRTV1K. 
+- The name of our neural network is **LSN (luminance segmented network)**
+- Curently **LSN** is only trained on our own data, if you want to compare it on current benchmark e.g. HDRTV1K, please wait us releasing the checkpoint trained on current training set e.g. HDRTV1K. 
 
 ### 2.1 Prerequisites
 
@@ -131,7 +131,7 @@ TO BE UPDATED
 
 ## 3. Assessment criteria of HDR/WCG container and ITM process
 
-In our paper we use 4 HDR/WCG exclusive metrics to measure how many HDR/WCG volume a single frame possess.
+In our paper we use 4 metrics to measure how many HDR/WCG volume a single frame possess.
 
 | Dimension                                                    |                                   Spatial fraction                                   |                         Numerical energy                         |
 |:------------------------------------------------------------:|:------------------------------------------------------------------------------------:|:----------------------------------------------------------------:|
