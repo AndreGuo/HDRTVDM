@@ -69,7 +69,7 @@ In this case, you can:
 
 + Change the style and aesthetic of degraded SDR to better suit your own technical and artistic intention, or involve your expertise in color science *etc.* for more precise control between SDR and HDR. 
 + Control the extent of degradation to follow the staticstics of target SDR in your own application scenario (*e.g.* remastering legacy SDR or converting on-the-air SDR). You can even add diversity on the extent of degradation to endow your network a generalizability to various extent of degradation.
-+ Add new types of degradation *e.g.* camera noise, compression artifact, motion blur, chromatic aberration and film grain *etc.* for more specific application scenario. Their degradation models are relatively studied more and you can easily find more references.
++ Add new types of degradation *e.g.* camera noise, compression artifact, motion blur, chromatic aberration and [film grain](https://arxiv.org/pdf/2206.07411v1.pdf) *etc.* for more specific application scenario. Their degradation models are relatively studied more and you can easily find more references.
 
 ### 1.2 Test set
 
