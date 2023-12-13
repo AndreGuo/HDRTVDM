@@ -73,7 +73,7 @@ In this case, you can:
 
 ### 1.2 Test set
 
-+ The test set used in our paper (consecutive frames) is protected by copyright and will not be relesed. In this case, we provided alternative test set which consists of 400 individual frames TODO.
++ The test set used in our paper (consecutive frames) is copyrighted and will not be relesed. We provided alternative test set which consists of 400 individual frames and even more scenes, it's available [here](https://pan.baidu.com/s/19bs6KHfnOrT_t-hcMJXJQw?pwd=7917).
 + In our paper, conventional distance-based metrics *PSNR*, *SSIM*, *deltaE* and *VDP* don't work since SDR-HDR/WCG numerical relation in training and test set is different (This is like model trained on *ExpertC* of *Adobe-MIT-5K* dataset will score lower on *ExpertA*). So if you want these metrics work, you should test on the same test set (*i.e.* if your model is trained with ***OCIO2*** SDR, you should also test it on ***OCIO2*** SDR).
 + From the prespective of quality assessment (QA), the assessment of ITM/up-conversion (enhancement process) is still an open task. We and our colleague is currently working on it, please refer to [here](https://www.sciencedirect.com/science/article/abs/pii/S0141938223001439) or [here](https://www.researchgate.net/publication/373316933_Inverse-tone-mapped_HDR_video_quality_assessment_A_new_dataset_and_benchmark).
 
