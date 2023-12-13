@@ -51,12 +51,12 @@ Atfer obtaining label HDR, you can:
 
 | From degradation model (DM) | (3) Extent of degradation | (4) Style or aesthetic | Download |
 |:----:|:---------------------:|:---------------:|:--------:|
-| ***OCIO2*** (ours)     | moderate                      | good                | [here(AliyunDrive)](https://www.aliyundrive.com/s/taNs6JGhAVj) or<br>[here(GoogleDrive)](https://drive.google.com/file/d/1eUCqMvUv-dBxHCQ1pW72sw4RvQDbI1o3/view?usp=sharing) (2.27GB)       |
-| ***2446c+GM*** (ours)    | moderate                      | good                | [here(AliyunDrive)](https://www.aliyundrive.com/s/taNs6JGhAVj) or<br>[here(GoogleDrive)](https://drive.google.com/file/d/1UouhVb05NfMh8Z7gx3z1v_RcaoSmQEqA/view?usp=sharing) (2.03GB)       |
-| ***HC+GM*** (ours)    | more                      | moderate                | [here(AliyunDrive)](https://www.aliyundrive.com/s/UXmUonpgukX) or<br>[here(GoogleDrive)](https://drive.google.com/file/d/1-qv7YPpM3sc_6Nex4UefWv6gEPBe2P2I/view?usp=sharing) (2.13GB)       |
+| ***OCIO2*** (ours)     | moderate                      | good                | [GoogleDrive](https://drive.google.com/file/d/1eUCqMvUv-dBxHCQ1pW72sw4RvQDbI1o3/view?usp=sharing) (2.27GB)       |
+| ***2446c+GM*** (ours)    | moderate                      | good                | [GoogleDrive](https://drive.google.com/file/d/1UouhVb05NfMh8Z7gx3z1v_RcaoSmQEqA/view?usp=sharing) (2.03GB)       |
+| ***HC+GM*** (ours)    | more                      | moderate                | [GoogleDrive](https://drive.google.com/file/d/1-qv7YPpM3sc_6Nex4UefWv6gEPBe2P2I/view?usp=sharing) (2.13GB)       |
 | ***2446a*** (old)    | less                      | bad                |          |
 | ***Reinhard*** (old)    | less                      | moderate                |          |
-| ***YouTube*** (old, most widely adopted)    | more                      | bad                | [here(GoogleDrive)](https://drive.google.com/file/d/1_MuSt3mdpNlqcKp8so_qJMvbVCfGjlyG/view?usp=sharing) (2.51GB)<br>(if used, you can learn a silimar style as previous methods)        |
+| ***YouTube*** (old, most widely adopted)    | more                      | bad                | [GoogleDrive](https://drive.google.com/file/d/1_MuSt3mdpNlqcKp8so_qJMvbVCfGjlyG/view?usp=sharing) (2.51GB)<br>(if used, you can learn a silimar style as previous methods)        |
 | ***DaVinci*** (w. different settings) | less | good | this DM is used in our another paper [ITM-LUT](https://github.com/AndreGuo/ITMLUT), TODO |
 
 and use any of them to train your network (since AliyunDrive donnot support sharing .zip, file there will be a .exe self-extract package and you can run it at Window system).
