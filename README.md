@@ -128,7 +128,7 @@ If you want to refer to our network only, you can call it ***LSN*** (Luminance S
 
 TO BE UPDATED
 
-## 3. Assessment criteria of HDR/WCG container and ITM process
+# 3. Assessment criteria of HDR/WCG container and ITM process
 
 In our paper we use 4 metrics to measure how many HDR/WCG volume a single frame possess.
 
