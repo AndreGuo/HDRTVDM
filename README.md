@@ -17,16 +17,16 @@ in CVPR2023.
 
 ---
 
-## 0. Our scope
+# 0. Our scope
 
 There're many HDR-related methods in this year's CVPR. Our method differs from others in that we take conventional SDR image to HDR in PQ/BT.2020 container (which is called *HDRTV* by [HDRTVNet(ICCV21)](http://openaccess.thecvf.com/content/ICCV2021/papers/Chen_A_New_Journey_From_SDRTV_to_HDRTV_ICCV_2021_paper.pdf)), and is meant to be applied in media industry.
 
 Others methods may take single SDR to a linear-light-HDR in grapghics/rendering application, or merge several SDRs to single HDR which should be applied in camera imaging pipeline.
 Please jump to them if you are interested in other HDR-related application scenario.
 
-## 1. HDRTV4K Dataset (Training set & test set)
+# 1. HDRTV4K Dataset (Training set & test set)
 
-### 1.1 Training set
+## 1.1 Training set
 
 Our major concerns on training data are:
 
@@ -37,17 +37,13 @@ Our major concerns on training data are:
 | (3) SDR's extent of degradation                              |                         a proper degradation recovery ability                        |
 | (4) style and aesthetic of degraded SDR                      |                   better aesthetic performance<br>(or consistency from SDR)             |
 
-Hence, we provide ***HDRTV4K*** label HDR (3848 individual frames) of better (1) quality and (2) diversity, you can downlaod from below:
+Hence, we provide ***HDRTV4K*** label HDR (3848 individual frames) of better (1) quality and (2) diversity, available on:
 
-TODO
-
-or
-
-[here](https://pan.baidu.com/s/1YgskYN7-TFBlrh94WNbnyA?pwd=ny0p) (BaiduNetDisk, code:ny0p, please extract these zip files together)
+[BaiduNetDisk](https://pan.baidu.com/s/1YgskYN7-TFBlrh94WNbnyA?pwd=ny0p), GoogleDrive(TODO).
 
 Atfer obtaining label HDR, you can:
 
-**1.1.1. Download the coresponding degraded SDR below:**
+###1.1.1. Download the coresponding degraded SDR below:
 
 | From degradation model (DM) | (3) Extent of degradation | (4) Style or aesthetic | Download |
 |:----:|:---------------------:|:---------------:|:--------:|
@@ -63,7 +59,7 @@ and use any of them to train your network (since AliyunDrive donnot support shar
 
 Since our degradation models (DMs) are just a preliminary attempt on concerns (3) and (4), we encourage you to:
 
-**1.1.2. (Encouraged) Use your own degradation model to obtain input SDR**
+###1.1.2. (Encouraged) Use your own degradation model to obtain input SDR
 
 In this case, you can:
 
@@ -71,20 +67,23 @@ In this case, you can:
 + Control the extent of degradation to follow the staticstics of target SDR in your own application scenario (*e.g.* remastering legacy SDR or converting on-the-air SDR). You can even add diversity on the extent of degradation to endow your network a generalizability to various extent of degradation.
 + Add new types of degradation *e.g.* camera noise, compression artifact, motion blur, [chromatic aberration](https://openaccess.thecvf.com/content/ICCV2021/papers/Li_Universal_and_Flexible_Optical_Aberration_Correction_Using_Deep-Prior_Based_Deconvolution_ICCV_2021_paper.pdf) and [film grain](https://arxiv.org/pdf/2206.07411v1.pdf) *etc.* for more specific application scenario. Their degradation models are relatively studied more with traditional and deep-learning model.
 
-### 1.2 Test set
+## 1.2 Test set
 
-+ The test set used in our paper (consecutive frames) is copyrighted and will not be relesed. We provided alternative test set which consists of 400 individual frames and even more scenes, it's available on [BaiduNetDisk](https://pan.baidu.com/s/19bs6KHfnOrT_t-hcMJXJQw?pwd=7917) and GoogleDrive(TODO)
++ The test set used in our paper (consecutive frames) is copyrighted and will not be relesed. We provided alternative test set which consists of ***400 individual frames*** and even more scenes, it's available on:
+
+[BaiduNetDisk](https://pan.baidu.com/s/19bs6KHfnOrT_t-hcMJXJQw?pwd=7917) and GoogleDrive(TODO)
+
 + In our paper, conventional distance-based metrics *PSNR*, *SSIM*, *deltaE* and *VDP* don't work since SDR-HDR/WCG numerical relation in training and test set is different (This is like model trained on *ExpertC* of *Adobe-MIT-5K* dataset will score lower on *ExpertA*). So if you want these metrics work, you should test on the same test set (*i.e.* if your model is trained with ***OCIO2*** SDR, you should also test it on ***OCIO2*** SDR).
 + From the prespective of quality assessment (QA), the assessment of ITM/up-conversion (enhancement process) is still an open task. We and our colleague is currently working on it, please refer to [here](https://www.sciencedirect.com/science/article/abs/pii/S0141938223001439) or [here](https://www.researchgate.net/publication/373316933_Inverse-tone-mapped_HDR_video_quality_assessment_A_new_dataset_and_benchmark).
 
-## 2. Method
+# 2. Method
 
-### 2.0 Note that
+## 2.0 Note that
 
 - The name of our neural network is **LSN (luminance segmented network)**
 - Curently **LSN** is only trained on our own data, if you want to compare it on current benchmark e.g. HDRTV1K, please wait us releasing the checkpoint trained on current training set e.g. HDRTV1K. 
 
-### 2.1 Prerequisites
+## 2.1 Prerequisites
 
 - Python
 - PyTorch
@@ -92,7 +91,7 @@ In this case, you can:
 - ImageIO
 - NumPy
 
-### 2.2 Usage (how to test)
+## 2.2 Usage (how to test)
 
 Run `method/test.py` with below configuration(s):
 
@@ -146,7 +145,7 @@ HDR/WCG's preception involoves sophisticated knowlegde in color science and huma
 
 TO BE UPDATED
 
-## Contact
+# Contact
 
 Guo Cheng ([Andre Guo](https://orcid.org/orcid=0000-0002-2660-2267)) guocheng@cuc.edu.cn
 
