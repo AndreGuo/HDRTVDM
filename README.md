@@ -51,13 +51,13 @@ Atfer obtaining label HDR, you can:
 
 | From degradation model (DM) | (3) Extent of degradation | (4) Style or aesthetic | Download |
 |:----:|:---------------------:|:---------------:|:--------:|
-| ***OCIO2*** (ours)     | moderate                      | good                | [GoogleDrive](https://drive.google.com/file/d/1eUCqMvUv-dBxHCQ1pW72sw4RvQDbI1o3/view?usp=sharing) (2.27GB)       |
-| ***2446c+GM*** (ours)    | moderate                      | good                | [GoogleDrive](https://drive.google.com/file/d/1UouhVb05NfMh8Z7gx3z1v_RcaoSmQEqA/view?usp=sharing) (2.03GB)       |
-| ***HC+GM*** (ours)    | more                      | moderate                | [GoogleDrive](https://drive.google.com/file/d/1-qv7YPpM3sc_6Nex4UefWv6gEPBe2P2I/view?usp=sharing) (2.13GB)       |
-| ***2446a*** (old)    | less                      | bad                |          |
-| ***Reinhard*** (old)    | less                      | moderate                |          |
-| ***YouTube*** (old, most widely adopted)    | more                      | bad                | [GoogleDrive](https://drive.google.com/file/d/1_MuSt3mdpNlqcKp8so_qJMvbVCfGjlyG/view?usp=sharing) (2.51GB)<br>(if used, you can learn a silimar style as previous methods)        |
-| ***DaVinci*** (w. different settings) | less | good | this DM is used in our another paper [ITM-LUT](https://github.com/AndreGuo/ITMLUT), TODO |
+| ***OCIO2*** (ours)     | moderate                      | good                | [GoogleDrive](https://drive.google.com/file/d/1eUCqMvUv-dBxHCQ1pW72sw4RvQDbI1o3/view?usp=sharing), [BaiduNetDisk](https://pan.baidu.com/s/1TAcILuuwn0PS8AVQTC3UjQ?pwd=fuu2) (2.27GB)       |
+| ***2446c+GM*** (ours)    | moderate                      | good                | [GoogleDrive](https://drive.google.com/file/d/1UouhVb05NfMh8Z7gx3z1v_RcaoSmQEqA/view?usp=sharing), [BaiduNetDisk](https://pan.baidu.com/s/1uP9FmXWODun6LdUUu1jmGg?pwd=671z) (2.03GB)       |
+| ***HC+GM*** (ours)    | more                      | moderate                | [GoogleDrive](https://drive.google.com/file/d/1-qv7YPpM3sc_6Nex4UefWv6gEPBe2P2I/view?usp=sharing), [BaiduNetDisk](https://pan.baidu.com/s/1zm27I0idMWML5F2YXO6EDQ?pwd=c9zg) (2.13GB)       |
+| ***2446a*** (old)    | less                      | bad                |  [BaiduNetDisk](https://pan.baidu.com/s/1yY2L7S6cKeJ26P2Rn2tIFg?pwd=7vp7)        |
+| ***Reinhard*** (old)    | less                      | moderate                | [BaiduNetDisk](https://pan.baidu.com/s/1JBdlPBLV8wZ6YXpOTbJC4g?pwd=w6p5)         |
+| ***YouTube*** (old, most widely adopted)    | more                      | bad                | [GoogleDrive](https://drive.google.com/file/d/1_MuSt3mdpNlqcKp8so_qJMvbVCfGjlyG/view?usp=sharing), [BaiduNetDisk](https://pan.baidu.com/s/1tlMibrUCBVLoC7KmzzvfMg?pwd=s4dv) (2.51GB)<br>(if used, you can learn a silimar style as previous methods)        |
+| ***DaVinci*** (w. different settings) | less | good | [GoogleDrive](TODO), [BaiduNetDisk](https://pan.baidu.com/s/1uKWpvprlOXWlnIHSrh9pyQ?pwd=v9kx)<br>this DM is used in our another paper [ITM-LUT](https://github.com/AndreGuo/ITMLUT) |
 
 and use any of them to train your network (since AliyunDrive donnot support sharing .zip, file there will be a .exe self-extract package and you can run it at Window system).
 
