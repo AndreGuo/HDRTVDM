@@ -57,7 +57,7 @@ Atfer obtaining label HDR, you can:
 | ***2446a*** (old)    | less                      | bad                |  [BaiduNetDisk](https://pan.baidu.com/s/1yY2L7S6cKeJ26P2Rn2tIFg?pwd=7vp7)        |
 | ***Reinhard*** (old)    | less                      | moderate                | [BaiduNetDisk](https://pan.baidu.com/s/1JBdlPBLV8wZ6YXpOTbJC4g?pwd=w6p5)         |
 | ***YouTube*** (old, most widely adopted)    | more                      | bad                | [GoogleDrive](https://drive.google.com/file/d/1_MuSt3mdpNlqcKp8so_qJMvbVCfGjlyG/view?usp=sharing), [BaiduNetDisk](https://pan.baidu.com/s/1tlMibrUCBVLoC7KmzzvfMg?pwd=s4dv) (2.51GB)<br>(if used, you can learn a silimar style as previous methods)        |
-| ***DaVinci*** (w. different settings) | less | good | [GoogleDrive](TODO), [BaiduNetDisk](https://pan.baidu.com/s/1uKWpvprlOXWlnIHSrh9pyQ?pwd=v9kx)<br>this DM is used in our another paper [ITM-LUT](https://github.com/AndreGuo/ITMLUT) |
+| ***DaVinci*** (w. different settings) | less | good | [GoogleDrive](https://drive.google.com/file/d/1DcHseQuQ9NZHs5qoWq8h77Q2CzfACjrN/view?usp=drive_link), [BaiduNetDisk](https://pan.baidu.com/s/1uKWpvprlOXWlnIHSrh9pyQ?pwd=v9kx)<br>(this DM is used in our another paper [ITM-LUT](https://github.com/AndreGuo/ITMLUT)) |
 
 and use any of them to train your network (since AliyunDrive donnot support sharing .zip, file there will be a .exe self-extract package and you can run it at Window system).
 
