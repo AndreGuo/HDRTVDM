@@ -43,7 +43,7 @@ Hence, we provide ***HDRTV4K*** label HDR (3848 individual frames) of better (1)
 
 Atfer obtaining label HDR, you can:
 
-###1.1.1. Download the coresponding degraded SDR below:
+### 1.1.1. Download the coresponding degraded SDR below:
 
 | From degradation model (DM) | (3) Extent of degradation | (4) Style or aesthetic | Download |
 |:----:|:---------------------:|:---------------:|:--------:|
@@ -59,7 +59,7 @@ and use any of them to train your network (since AliyunDrive donnot support shar
 
 Since our degradation models (DMs) are just a preliminary attempt on concerns (3) and (4), we encourage you to:
 
-###1.1.2. (Encouraged) Use your own degradation model to obtain input SDR
+### 1.1.2. (Encouraged) Use your own degradation model to obtain input SDR
 
 In this case, you can:
 
