@@ -17,16 +17,27 @@ in CVPR2023.
 
 ---
 
-# 0. Our scope
+# 1. Introduction
 
-There're many HDR-related methods in this year's CVPR. Our method differs from others in that we take conventional SDR image to HDR in PQ/BT.2020 container (which is called *HDRTV* by [HDRTVNet(ICCV21)](http://openaccess.thecvf.com/content/ICCV2021/papers/Chen_A_New_Journey_From_SDRTV_to_HDRTV_ICCV_2021_paper.pdf)), and is meant to be applied in media industry.
+## 1.1. Our scope
 
-Others methods may take single SDR to a linear-light-HDR in grapghics/rendering application, or merge several SDRs to single HDR which should be applied in camera imaging pipeline.
-Please jump to them if you are interested in other HDR-related application scenario.
+There're many HDR-related methods in this year's CVPR. Our method differs from others in that we take conventional SDR/BT.709 image to HDR/WCG in PQ/BT.2020 (which is called ***HDRTV*** by [HDRTVNet(ICCV21)](http://openaccess.thecvf.com/content/ICCV2021/papers/Chen_A_New_Journey_From_SDRTV_to_HDRTV_ICCV_2021_paper.pdf)), and is meant to be applied in media industry.
 
-# 1. HDRTV4K Dataset (Training set & test set)
+Our task can be called: ***SDR-to-HDRTV***, ***ITM*** (inverse tone-mapping) or HDR/WCG ***up-conversion***. 
 
-## 1.1 Training set
+Others methods may take single SDR to a linear-light-HDR in grapghics/rendering (***SI-HDR***, single-image HDR reconstruction), or merge several SDRs to single HDR in camera imaging pipeline (***MEF-HDR***, multi-exposure fusion HDR imaging).
+Please jump to them if you are interested.
+
+## 1.2 What we provide
+
++ *PyTorch* implementaion of our luminance segmented **network** (***LSN***) with Transformer-UNet and self-adaptive convolution.
++ A new **training set** named ***HDRTV4K*** (3848 HDR/WCG-SDR image pairs, current 1235 the largest).
++ ***HDRTV4K***'s new **test set** (400 GT-LQ pairs, current 160 the largest), both test and training set provide 7 versions of degradation models.
++ *MATLAB* implementaion of **HDR/WCG metrics** FHLP/EHL/FWGP/EWG.
+
+# 2. HDRTV4K Dataset (Training set & test set)
+
+## 2.1 Training set
 
 Our major concerns on training data are:
 
@@ -35,7 +46,7 @@ Our major concerns on training data are:
 | (1) Label HDR's (scene) diversity                            |                            better generalization ability                             |
 | (2) Label HDR's quality<br>(especially the amount of advanced color and luminance volume)|    more chance to produce advanced HDR/WCG volume        |
 | (3) SDR's extent of degradation                              |                         a proper degradation recovery ability                        |
-| (4) style and aesthetic of degraded SDR                      |                   better aesthetic performance<br>(or consistency from SDR)             |
+| (4) style and aesthetic of degraded SDR                      |                   better aesthetic performance<br>(or consistency from SDR)          |
 
 Hence, we provide ***HDRTV4K*** label HDR (3848 individual frames) of better (1) quality and (2) diversity, available on:
 
@@ -43,7 +54,7 @@ Hence, we provide ***HDRTV4K*** label HDR (3848 individual frames) of better (1)
 
 Atfer obtaining label HDR, you can:
 
-### 1.1.1. Download the coresponding degraded SDR below:
+### 2.1.1. Download the coresponding degraded SDR below:
 
 | From degradation model (DM) | (3) Extent of degradation | (4) Style or aesthetic | Download |
 |:----:|:---------------------:|:---------------:|:--------:|
@@ -59,7 +70,7 @@ and use any of them to train your network (since AliyunDrive donnot support shar
 
 Since our degradation models (DMs) are just a preliminary attempt on concerns (3) and (4), we encourage you to:
 
-### 1.1.2. (Encouraged) Use your own degradation model to obtain input SDR
+### 2.1.2. (Encouraged) Use your own degradation model to obtain input SDR
 
 In this case, you can:
 
@@ -67,7 +78,7 @@ In this case, you can:
 + Control the extent of degradation to follow the staticstics of target SDR in your own application scenario (*e.g.* remastering legacy SDR or converting on-the-air SDR). You can even add diversity on the extent of degradation to endow your network a generalizability to various extent of degradation.
 + Add new types of degradation *e.g.* camera noise, compression artifact, motion blur, [chromatic aberration](https://openaccess.thecvf.com/content/ICCV2021/papers/Li_Universal_and_Flexible_Optical_Aberration_Correction_Using_Deep-Prior_Based_Deconvolution_ICCV_2021_paper.pdf) and [film grain](https://arxiv.org/pdf/2206.07411v1.pdf) *etc.* for more specific application scenario. Their degradation models are relatively studied more with traditional and deep-learning model.
 
-## 1.2 Test set
+## 2.2 Test set
 
 + The test set used in our paper (consecutive frames) is copyrighted and will not be relesed. We provided alternative test set which consists of ***400 individual frames*** and even more scenes, it's available on:
 
@@ -77,14 +88,9 @@ In this case, you can:
 + You can only take our GT HDR and use your own degradation model to generate input SDR, to test different aspect of method performance.
 + From the prespective of quality assessment (QA), the assessment of ITM/up-conversion (enhancement process) is still an open task. We and our colleague is currently working on it, please refer to [here](https://www.sciencedirect.com/science/article/abs/pii/S0141938223001439) or [here](https://www.researchgate.net/publication/373316933_Inverse-tone-mapped_HDR_video_quality_assessment_A_new_dataset_and_benchmark).
 
-# 2. Method
+# 3. Luminance Segmented Network
 
-## 2.0 Note that
-
-- The name of our neural network is **LSN (luminance segmented network)**
-- Curently **LSN** is only trained on our own data, if you want to compare it on current benchmark e.g. HDRTV1K, please wait us releasing the checkpoint trained on current training set e.g. HDRTV1K. 
-
-## 2.1 Prerequisites
+## 3.1 Prerequisites
 
 - Python
 - PyTorch
@@ -92,7 +98,7 @@ In this case, you can:
 - ImageIO
 - NumPy
 
-## 2.2 Usage (how to test)
+## 3.2 Usage (how to test)
 
 Run `method/test.py` with below configuration(s):
 
@@ -129,7 +135,7 @@ If you want to refer to our network only, you can call it ***LSN*** (Luminance S
 
 TO BE UPDATED
 
-# 3. Assessment criteria of HDR/WCG container and ITM process
+# 4. Assessment criteria of HDR/WCG container and ITM process
 
 In our paper we use 4 metrics to measure how many HDR/WCG volume a single frame possess.
 
