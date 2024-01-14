@@ -34,13 +34,14 @@ Please jump to them if you are interested.
 + A new **training set** named ***HDRTV4K*** (3848 HDR/WCG-SDR image pairs, current 1235 the largest).
 + ***HDRTV4K***'s new **test set** (400 GT-LQ pairs, current 160 the largest), both test and training set provide 7 versions of degradation models.
 + *MATLAB* implementaion of **HDR/WCG metrics** FHLP/EHL/FWGP/EWG.
++ Other discussions...
 
 ## 1.3 Changelog
 
-| Date                                                         |                                   log                                                |
-|:------------------------------------------------------------:|:------------------------------------------------------------------------------------:|
-| (1) Label HDR/WCG's (scene) diversity                        |                            better generalization ability                             |
-| (2) Label HDR/WCG's quality<br>(especially the amount of advanced color and luminance volume)|    more chance to produce advanced HDR/WCG volume    |
+| Date          |   log  |
+|:-------------:|:------:|
+| 13 Dec 2023   | Since most SoTAs are still trained with YouTude degradation model (DM), we add this DM to both our training and test set, so you can: (1) train your network with the YouTube version of ***HDRTV4K*** training set and get a similar look as SoTAs; (2) directly test SoTA's original checkpoint (trained with YouTube DM) using the YouTube version of ***HDRTV4K*** test set. |
+| 14 Jan 2024   | We change ***LSN*** (our network)'s default checkpoint to the one trained with commom YouTube DM, so you can directly compare it with SoTAs, by the old manner (PSNR, SSIM etc.). |
 
 # 2. HDRTV4K Dataset (Training set & test set)
 
@@ -57,7 +58,9 @@ Our major concerns on training data are:
 
 Hence, we provide ***HDRTV4K*** label HDR (3848 individual frames) of better (1) quality and (2) diversity, available on:
 
-[BaiduNetDisk](https://pan.baidu.com/s/1YgskYN7-TFBlrh94WNbnyA?pwd=ny0p), GoogleDrive(TODO).
+| Training set label HDR/WCG download |
+|:-----------------------------------:|
+| [BaiduNetDisk](https://pan.baidu.com/s/1YgskYN7-TFBlrh94WNbnyA?pwd=ny0p), GoogleDrive(TODO) |
 
 Atfer obtaining label HDR, you can:
 
@@ -87,13 +90,16 @@ In this case, you can:
 
 ## 2.2 Test set
 
-+ The test set used in our paper (consecutive frames) is copyrighted and will not be relesed. We provided alternative test set which consists of ***400 individual frames*** and even more scenes, it's available on:
++ The test set used in our paper (consecutive frames) is copyrighted and will not be relesed. We provided alternative test set which consists of ***400 individual frames*** and even more scenes. ***HDRTV4K***'s test set share the similar concerns as training set, it's available on:
 
-[BaiduNetDisk](https://pan.baidu.com/s/19bs6KHfnOrT_t-hcMJXJQw?pwd=7917) and GoogleDrive(TODO)
+| Test set GT and LQ download |
+|:-----------------------------------:|
+| [BaiduNetDisk](https://pan.baidu.com/s/19bs6KHfnOrT_t-hcMJXJQw?pwd=7917) and GoogleDrive(TODO) |
 
-+ In our paper, conventional distance-based metrics *PSNR*, *SSIM*, *deltaE* and *VDP* don't work since SDR-HDR/WCG numerical relation in training and test set is different (This is like model trained on *ExpertC* of *Adobe-MIT-5K* dataset will score lower on *ExpertA*). So if you want these metrics work, you should test on the same test set (*i.e.* if your model is trained with ***OCIO2*** SDR, you should also test it on ***OCIO2*** SDR).
-+ You can only take our GT HDR and use your own degradation model to generate input SDR, to test different aspect of method performance.
-+ From the prespective of quality assessment (QA), the assessment of ITM/up-conversion (enhancement process) is still an open task. We and our colleague is currently working on it, please refer to [here](https://www.sciencedirect.com/science/article/abs/pii/S0141938223001439) or [here](https://www.researchgate.net/publication/373316933_Inverse-tone-mapped_HDR_video_quality_assessment_A_new_dataset_and_benchmark).
+This package contains 1 version of GT and 7 versions of LQ by different degradation models, so:
+
++ You should test on the same test set (*i.e.* if your model is trained with ***OCIO2*** SDR, you should also test it on ***OCIO2*** SDR), otherwise conventional distance-based metrics *PSNR*, *SSIM*, *deltaE* and *VDP* will not work. (Since SDR-HDR/WCG numerical relation in training and test set is different, like model trained on *ExpertC* of *Adobe-MIT-5K* dataset will score lower on *ExpertA*).
++ You can take only our GT and use your own degradation model to generate input LQ SDR, to test different aspect of method performance.
 
 # 3. Luminance Segmented Network
 
@@ -138,10 +144,6 @@ Add below configuration(s) for specific propose:
 
 We also provide alternative checkpoints: `method/params_YouTube.pth` (trained with same lable HDR, but different ***YouTube*** degradation model) and `method/params_Zeng20.pth` (trained with same degradation model, but different label HDR from ***Zeng20*** dadatset), to show the imapct of training set on our task.
 
-If you want to refer to our network only, you can call it ***LSN*** (Luminance Segmented Network).
-
-TO BE UPDATED
-
 # 4. Assessment criteria of HDR/WCG container and ITM process
 
 In our paper we use 4 metrics to measure how many HDR/WCG volume a single frame possess.
@@ -158,6 +160,10 @@ From the prespective of quality assessment (QA), these metrics have not been pro
 HDR/WCG's preception involoves sophisticated knowlegde in color science and human vision *etc.*, and intuitively these 4 metrics chould be mesured in a "naturalness" way (counting FHLP/EHL/FWGP/EWG's distribution on large-scale visually-pleasuring HDR/WCG images, and juding if someone's FHLP/EHL/FWGP/EWG falls in commom distribution.)
 
 TO BE UPDATED
+
+# Still something to discuss?
++ From the prespective of quality assessment (QA), the assessment of ITM/up-conversion (enhancement process) is still an open task. We and our colleague is currently working on it, please refer to [here](https://www.sciencedirect.com/science/article/abs/pii/S0141938223001439) or [here](https://www.researchgate.net/publication/373316933_Inverse-tone-mapped_HDR_video_quality_assessment_A_new_dataset_and_benchmark).
++ ...TO BE UPDATED
 
 # Contact
 
