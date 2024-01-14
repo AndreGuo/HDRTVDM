@@ -35,6 +35,13 @@ Please jump to them if you are interested.
 + ***HDRTV4K***'s new **test set** (400 GT-LQ pairs, current 160 the largest), both test and training set provide 7 versions of degradation models.
 + *MATLAB* implementaion of **HDR/WCG metrics** FHLP/EHL/FWGP/EWG.
 
+## 1.3 Changelog
+
+| Date                                                         |                                   log                                                |
+|:------------------------------------------------------------:|:------------------------------------------------------------------------------------:|
+| (1) Label HDR/WCG's (scene) diversity                        |                            better generalization ability                             |
+| (2) Label HDR/WCG's quality<br>(especially the amount of advanced color and luminance volume)|    more chance to produce advanced HDR/WCG volume    |
+
 # 2. HDRTV4K Dataset (Training set & test set)
 
 ## 2.1 Training set
@@ -43,8 +50,8 @@ Our major concerns on training data are:
 
 | Aspect                                                       |                                   Model's benefit                                    |
 |:------------------------------------------------------------:|:------------------------------------------------------------------------------------:|
-| (1) Label HDR's (scene) diversity                            |                            better generalization ability                             |
-| (2) Label HDR's quality<br>(especially the amount of advanced color and luminance volume)|    more chance to produce advanced HDR/WCG volume        |
+| (1) Label HDR/WCG's (scene) diversity                        |                            better generalization ability                             |
+| (2) Label HDR/WCG's quality<br>(especially the amount of advanced color and luminance volume)|    more chance to produce advanced HDR/WCG volume    |
 | (3) SDR's extent of degradation                              |                         a proper degradation recovery ability                        |
 | (4) style and aesthetic of degraded SDR                      |                   better aesthetic performance<br>(or consistency from SDR)          |
 
