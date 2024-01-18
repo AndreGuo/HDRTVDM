@@ -45,7 +45,7 @@ Please jump to them if you are interested.
 
 # 2. HDRTV4K Dataset (Training set & test set)
 
-## 2.1 Training set
+## 2.1 HDRTV4K Training set
 
 Our major concerns on training data are:
 
@@ -64,9 +64,9 @@ Hence, we provide ***HDRTV4K*** label HDR (3848 individual frames) of better (1)
 
 Atfer obtaining label HDR, you can:
 
-### 2.1.1. Download the coresponding degraded SDR below:
+### 2.1.1. **OPTION 1**: Download the coresponding degraded SDR below:
 
-| From degradation model (DM) | (3) Extent of degradation | (4) Style or aesthetic | Download |
+| SDR from degradation model (DM) | (3) Extent of degradation | (4) Style or aesthetic | Download |
 |:----:|:---------------------:|:---------------:|:--------:|
 | ***OCIO2*** (ours)     | moderate                      | good                | [GoogleDrive](https://drive.google.com/file/d/1eUCqMvUv-dBxHCQ1pW72sw4RvQDbI1o3/view?usp=sharing), [BaiduNetDisk](https://pan.baidu.com/s/1TAcILuuwn0PS8AVQTC3UjQ?pwd=fuu2) (2.27GB)       |
 | ***2446c+GM*** (ours)    | moderate                      | good                | [GoogleDrive](https://drive.google.com/file/d/1UouhVb05NfMh8Z7gx3z1v_RcaoSmQEqA/view?usp=sharing), [BaiduNetDisk](https://pan.baidu.com/s/1uP9FmXWODun6LdUUu1jmGg?pwd=671z) (2.03GB)       |
@@ -76,11 +76,11 @@ Atfer obtaining label HDR, you can:
 | ***YouTube*** (old, most widely adopted)    | more                      | bad                | [GoogleDrive](https://drive.google.com/file/d/1_MuSt3mdpNlqcKp8so_qJMvbVCfGjlyG/view?usp=sharing), [BaiduNetDisk](https://pan.baidu.com/s/1tlMibrUCBVLoC7KmzzvfMg?pwd=s4dv) (2.51GB)<br>(if used, you can learn a silimar style as previous methods)        |
 | ***DaVinci*** (w. different settings) | less | good | [GoogleDrive](https://drive.google.com/file/d/1DcHseQuQ9NZHs5qoWq8h77Q2CzfACjrN/view?usp=drive_link), [BaiduNetDisk](https://pan.baidu.com/s/1uKWpvprlOXWlnIHSrh9pyQ?pwd=v9kx)<br>(this DM is used in our another paper [ITM-LUT](https://github.com/AndreGuo/ITMLUT)) |
 
-and use any of them to train your network (since AliyunDrive donnot support sharing .zip, file there will be a .exe self-extract package and you can run it at Window system).
+and use any of them as the input to train your network.
 
 Since our degradation models (DMs) are just a preliminary attempt on concerns (3) and (4), we encourage you to:
 
-### 2.1.2. (Encouraged) Use your own degradation model to obtain input SDR
+### 2.1.2. **OPTION 1**(Encouraged): Use your own degradation model to obtain input SDR
 
 In this case, you can:
 
@@ -88,9 +88,18 @@ In this case, you can:
 + Control the extent of degradation to follow the staticstics of target SDR in your own application scenario (*e.g.* remastering legacy SDR or converting on-the-air SDR). You can even add diversity on the extent of degradation to endow your network a generalizability to various extent of degradation.
 + Add new types of degradation *e.g.* camera noise, compression artifact, motion blur, [chromatic aberration](https://openaccess.thecvf.com/content/ICCV2021/papers/Li_Universal_and_Flexible_Optical_Aberration_Correction_Using_Deep-Prior_Based_Deconvolution_ICCV_2021_paper.pdf) and [film grain](https://arxiv.org/pdf/2206.07411v1.pdf) *etc.* for more specific application scenario. Their degradation models are relatively studied more with traditional and deep-learning model.
 
-## 2.2 Test set
+## 2.2 HDRTV4K Test set
 
-+ The test set used in our paper (consecutive frames) is copyrighted and will not be relesed. We provided alternative test set which consists of ***400 individual frames*** and even more scenes. ***HDRTV4K***'s test set share the similar concerns as training set, it's available on:
+The test set used in our paper (consecutive frames) is copyrighted and will not be relesed. We provided alternative test set which consists of ***400 individual frames*** and even more scenes. ***HDRTV4K***'s test set share the similar concerns as training set:
+
+| Better                                                       |                    The test set will manifest more algorithm's           |
+|:------------------------------------------------------------:|:------------------------------------------------------------------------:|
+| (1) GT HDR/WCG's (scene) diversity                           |                    scene generalization ability                          |
+| (2) GT HDR/WCG's advanced color and luminance volume         |     mapping/expansion ability of advanced HDR/WCG volume                 |
+| (3a) Input SDR's extent of degradation                       |                         degradation recovery ability                     |
+| (3b) Input SDR's diversity of degradation                    |                  degradation generalization ability                      |
+
+It's available on:
 
 | Test set GT and LQ download |
 |:-----------------------------------:|
