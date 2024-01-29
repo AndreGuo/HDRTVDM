@@ -153,7 +153,7 @@ Add below configuration(s) for specific propose:
 
 Change `line 104` in `method/test.py` to use other parameters/checkpoint:
 
-+ Current `method/params.pth` was the latest one trained on common HDRTV1K dataset (YouTube degradation model) like most SoTAs, which will score 37.090dB the PSNR, 0.9813 the SSIM, 9.9091 the $\Delta$ E<sub>itp</sub> and 9.0997 VDP3 ('task'='side-by-side', 'color_encoding'='rgb-bt.2020', 'pixel_per_degree'=60) on HDRTV14 test set.
++ Current `method/params.pth` was the latest one trained on common HDRTV1K dataset (YouTube degradation model) like most SoTAs, which will score 37.090dB the PSNR, 0.9813 the SSIM, 9.9091 the $\Delta$ E<sub>itp</sub> and 9.0997 VDP3 ('task'='side-by-side', 'color_encoding'='rgb-bt.2020', 'pixel_per_degree'=60) on the mostly-used HDRTV1K test set.
 + `method/params_3DM.pth` was trained on our HDRTV4K dataset and 3 degradation models (2446c+GM, HC+GM and OCIO2), which will produce the same look as persented in our paper.
 + `method/params_DaVinci.pth` was trained on our HDRTV4K dataset and DaVinci degradation model, which is used in another our paper [ITM-LUT](https://github.com/AndreGuo/ITMLUT).
 + We will later release more interesting checkpoint(s).
