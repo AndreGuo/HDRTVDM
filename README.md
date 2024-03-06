@@ -41,7 +41,7 @@ Please jump to them if you are interested.
 | Date          |   log  |
 |:-------------:|:------:|
 | 13 Dec 2023   | Since most SoTAs are still trained with YouTude degradation model (DM), we add this DM to both our training and test set, so you can: (1) train your network with the YouTube version of ***HDRTV4K*** training set and get a similar look as SoTAs; (2) directly test SoTA's original checkpoint (trained with YouTube DM) using the YouTube version of ***HDRTV4K*** test set. |
-| 14 Jan 2024   | We change ***LSN*** (our network)'s default checkpoint to the one trained with commom YouTube DM, so you can directly compare it with SoTAs, by the old manner (PSNR, SSIM etc.). |
+| 14 Jan 2024   | We change ***LSN*** (our network)'s default checkpoint to the one trained with commom HDRTV1K dataset (and YouTube DM), so you can directly compare it with SoTAs, by the old manner (PSNR, SSIM etc.). |
 
 # 2. HDRTV4K Dataset (Training set & test set)
 
