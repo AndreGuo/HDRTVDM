@@ -33,7 +33,7 @@ Please jump to them if you are interested.
 + *PyTorch* implementaion of our luminance segmented **network** (***LSN***) with Transformer-UNet and self-adaptive convolution.
 + A new **training set** named ***HDRTV4K*** (3848 HDR/WCG-SDR image pairs, current 1235 the largest).
 + ***HDRTV4K***'s new **test set** (400 GT-LQ pairs, current 160 the largest), both test and training set provide 7 versions of degradation models.
-+ *MATLAB* implementaion of **HDR/WCG metrics** FHLP/EHL/FWGP/EWG.
++ *MATLAB* implementaion of non-reference **HDR/WCG metrics** FHLP/EHL/FWGP/EWG.
 + Other discussions...
 
 ## 1.3 Changelog
