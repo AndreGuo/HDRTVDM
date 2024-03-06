@@ -66,7 +66,7 @@ Atfer obtaining label HDR, you can:
 
 ### 2.1.1. **OPTION 1**: Download the coresponding degraded SDR below:
 
-| SDR from degradation model (DM) | (3) Extent of degradation | (4) Style or aesthetic | Download |
+| SDR from Degradation Model (DM) | (3) Extent of degradation | (4) Style or aesthetic | Download |
 |:----:|:---------------------:|:---------------:|:--------:|
 | ***OCIO2*** (ours)     | moderate                      | good                | [GoogleDrive](https://drive.google.com/file/d/1eUCqMvUv-dBxHCQ1pW72sw4RvQDbI1o3/view?usp=sharing), [BaiduNetDisk](https://pan.baidu.com/s/1TAcILuuwn0PS8AVQTC3UjQ?pwd=fuu2) (2.27GB)       |
 | ***2446c+GM*** (ours)    | moderate                      | good                | [GoogleDrive](https://drive.google.com/file/d/1UouhVb05NfMh8Z7gx3z1v_RcaoSmQEqA/view?usp=sharing), [BaiduNetDisk](https://pan.baidu.com/s/1uP9FmXWODun6LdUUu1jmGg?pwd=671z) (2.03GB)       |
@@ -74,7 +74,7 @@ Atfer obtaining label HDR, you can:
 | ***2446a*** (old)    | less                      | bad                |  [BaiduNetDisk](https://pan.baidu.com/s/1yY2L7S6cKeJ26P2Rn2tIFg?pwd=7vp7)        |
 | ***Reinhard*** (old)    | less                      | moderate                | [BaiduNetDisk](https://pan.baidu.com/s/1JBdlPBLV8wZ6YXpOTbJC4g?pwd=w6p5)         |
 | ***YouTube*** (old, most widely adopted)    | more                      | bad                | [GoogleDrive](https://drive.google.com/file/d/1_MuSt3mdpNlqcKp8so_qJMvbVCfGjlyG/view?usp=sharing), [BaiduNetDisk](https://pan.baidu.com/s/1tlMibrUCBVLoC7KmzzvfMg?pwd=s4dv) (2.51GB)<br>(if used, you can learn a silimar style as previous methods)        |
-| ***DaVinci*** <a id='DaVinciSDR'>(w. different settings)</a> | less | good | [GoogleDrive](https://drive.google.com/file/d/1DcHseQuQ9NZHs5qoWq8h77Q2CzfACjrN/view?usp=drive_link), [BaiduNetDisk](https://pan.baidu.com/s/1uKWpvprlOXWlnIHSrh9pyQ?pwd=v9kx)<br>(this DM is used in our another paper [ITM-LUT](https://github.com/AndreGuo/ITMLUT)) |
+| ***DaVinci*** <a id='DaVinciSDR'>(w. different settings)</a> | less | good | [GoogleDrive](https://drive.google.com/file/d/1DcHseQuQ9NZHs5qoWq8h77Q2CzfACjrN/view?usp=drive_link), [BaiduNetDisk](https://pan.baidu.com/s/1uKWpvprlOXWlnIHSrh9pyQ?pwd=v9kx)<br>(this DM is used in another our algorithm [ITM-LUT](https://github.com/AndreGuo/ITMLUT)) |
 
 and use any of them as the input to train your network.
 
@@ -153,9 +153,9 @@ Add below configuration(s) for specific propose:
 
 Change `line 104` in `method/test.py` to use other parameters/checkpoint:
 
-+ Current `method/params.pth` was the latest one trained on common HDRTV1K dataset (YouTube degradation model) like most SoTAs, which will score 37.090dB the PSNR, 0.9813 the SSIM, 9.9091 the $\Delta$ E<sub>itp</sub> and 9.0997 VDP3 ('task'='side-by-side', 'color_encoding'='rgb-bt.2020', 'pixel_per_degree'=60) on the mostly-used HDRTV1K test set.
++ Current `method/params.pth` was the latest one trained on common HDRTV1K dataset (YouTube degradation model) like most SoTAs, which will score 37.090dB the PSNR, 0.9813 the SSIM, 9.9091 the $\Delta$ E<sub>itp</sub> and 9.0997 VDP3 ('task'='side-by-side', 'color_encoding'='rgb-bt.2020', 'pixel_per_degree'=60 on 1920*1080 image) on the mostly-used HDRTV1K test set. This checkpoint was not elaborately trained, so you may retrain another one using your tricks.
 + `method/params_3DM.pth` was trained on our HDRTV4K dataset and 3 degradation models (2446c+GM, HC+GM and OCIO2), which will produce the same look as persented in our paper.
-+ `method/params_DaVinci.pth` was trained on our HDRTV4K dataset and DaVinci degradation model, which is used in another our paper [ITM-LUT](https://github.com/AndreGuo/ITMLUT).
++ `method/params_DaVinci.pth` was trained on our HDRTV4K dataset and DaVinci degradation model, this degradation model is used in another our algorithm [ITM-LUT](https://github.com/AndreGuo/ITMLUT).
 + We will later release more interesting checkpoint(s).
 
 # 4. Assessment criteria of HDR/WCG container and ITM process
