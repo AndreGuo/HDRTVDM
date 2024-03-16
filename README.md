@@ -66,15 +66,15 @@ Atfer obtaining label HDR, you can:
 
 ### 2.1.1. **OPTION 1**: Download the coresponding degraded SDR below:
 
-| SDR from Degradation Model (DM) | Usage | (3) Extent of degradation | (4) Style or aesthetic | Download |
+| SDR from Degradation Model (DM) | DM Usage | (3) Extent of degradation | (4) Style or aesthetic | Download |
 |:----:|:---:|:---------------------:|:---------------:|:--------:|
 | ***OCIO2*** | our method | moderate                      | good                | [GoogleDrive](https://drive.google.com/file/d/1eUCqMvUv-dBxHCQ1pW72sw4RvQDbI1o3/view?usp=sharing), [BaiduNetDisk](https://pan.baidu.com/s/1TAcILuuwn0PS8AVQTC3UjQ?pwd=fuu2) (2.27GB)       |
 | ***2446c+GM*** | our method | moderate                      | good                | [GoogleDrive](https://drive.google.com/file/d/1UouhVb05NfMh8Z7gx3z1v_RcaoSmQEqA/view?usp=sharing), [BaiduNetDisk](https://pan.baidu.com/s/1uP9FmXWODun6LdUUu1jmGg?pwd=671z) (2.03GB)       |
 | ***HC+GM*** | our method | more                      | moderate                | [GoogleDrive](https://drive.google.com/file/d/1-qv7YPpM3sc_6Nex4UefWv6gEPBe2P2I/view?usp=sharing), [BaiduNetDisk](https://pan.baidu.com/s/1zm27I0idMWML5F2YXO6EDQ?pwd=c9zg) (2.13GB)       |
 | ***2446a*** | [Chen2021](https://ieeexplore.ieee.org/document/9637539) | less                      | bad                |  [BaiduNetDisk](https://pan.baidu.com/s/1yY2L7S6cKeJ26P2Rn2tIFg?pwd=7vp7)        |
-| ***Reinhard*** | [SR-ITM-GAN](https://ieeexplore.ieee.org/document/9212411) etc. | less                      | moderate                | [BaiduNetDisk](https://pan.baidu.com/s/1JBdlPBLV8wZ6YXpOTbJC4g?pwd=w6p5)         |
+| ***Reinhard*** | [SR-ITM-GAN](https://ieeexplore.ieee.org/document/9212411) etc. | less                      | moderate                | [OneDrive](https://1drv.ms/u/s!AkSDjl0Zo6OQjVvCX71ZXaIVy83k?e=Mn9ugr), [BaiduNetDisk](https://pan.baidu.com/s/1JBdlPBLV8wZ6YXpOTbJC4g?pwd=w6p5)         |
 | ***YouTube*** | most other methods who use [HDRTV1K](https://openaccess.thecvf.com/content/ICCV2021/papers/Chen_A_New_Journey_From_SDRTV_to_HDRTV_ICCV_2021_paper.pdf) or [KAIST](https://openaccess.thecvf.com/content_ICCV_2019/papers/Kim_Deep_SR-ITM_Joint_Learning_of_Super-Resolution_and_Inverse_Tone-Mapping_for_ICCV_2019_paper.pdf) training set (if used, you can learn a silimar style as previous methods) | more                      | bad                | [GoogleDrive](https://drive.google.com/file/d/1_MuSt3mdpNlqcKp8so_qJMvbVCfGjlyG/view?usp=sharing), [BaiduNetDisk](https://pan.baidu.com/s/1tlMibrUCBVLoC7KmzzvfMg?pwd=s4dv) (2.51GB)<br>  |
-| ***2390EETF+GM*** | [Zhang2023](https://www.sciencedirect.com/science/article/abs/pii/S0141938223001257) | TODO | TODO | [BaiduNetDisk](https://pan.baidu.com/s/1Tvm_AKW5Nn0wjdAWM5pxQw?pwd=0kei) |
+| ***2390EETF+GM*** | [Zhang2023](https://www.sciencedirect.com/science/article/abs/pii/S0141938223001257) | TODO | TODO | [OneDrive](https://1drv.ms/u/s!AkSDjl0Zo6OQjVpielN4nxoEpi7W?e=LmARkP), [BaiduNetDisk](https://pan.baidu.com/s/1Tvm_AKW5Nn0wjdAWM5pxQw?pwd=0kei) |
 | ***DaVinci*** <a id='DaVinciSDR'>(w. different settings)</a> |  another our algorithm [ITM-LUT](https://github.com/AndreGuo/ITMLUT) |less | good | [GoogleDrive](https://drive.google.com/file/d/1DcHseQuQ9NZHs5qoWq8h77Q2CzfACjrN/view?usp=drive_link), [BaiduNetDisk](https://pan.baidu.com/s/1uKWpvprlOXWlnIHSrh9pyQ?pwd=v9kx)<br> |
 
 and use any of them as the input to train your network.
